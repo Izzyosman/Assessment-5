@@ -66,3 +66,23 @@ function getCountries() {
 getCountries()
 getCities()
 form.addEventListener('submit', handleSubmit)
+
+function getCities() {
+    
+    const cities = [
+      { name: 'City A', rating: 9.5 },
+      { name: 'City B', rating: 8.7 },
+      { name: 'City C', rating: 8.9 },
+      
+    ];
+  
+    cities.sort((cityA, cityB) => cityB.rating - cityA.rating);
+  
+    return cities;
+  }
+  
+  const sortedCities = getCities();
+  console.log(sortedCities);
+  seed();
+
+  
